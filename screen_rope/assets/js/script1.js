@@ -3,7 +3,7 @@ const sound1 = document.getElementById("sound1");
 const sound2 = document.getElementById("sound2");
 const sound3 = document.getElementById("sound3");
 const sound4 = document.getElementById("sound4");
-let timer = 1000;
+let timer = 2000;
 
 
 function updateWebPage(data) {
@@ -27,7 +27,7 @@ if (vibration === "high1") {
     soundTimeout = setTimeout(() => {
         console.log("dentro high1");
         sound1.pause();
-    }, 5000);
+    }, 8000);
 } else {
     console.log("dentro low");
 }
@@ -45,7 +45,7 @@ if (vibration === "high2") {
     soundTimeout2 = setTimeout(() => {
         console.log("dentro high2");
         sound2.pause();
-    }, 5000);
+    }, 8000);
 } else {
     console.log("dentro low2");
 }
@@ -64,7 +64,7 @@ if (vibration === "high3") {
     soundTimeout3 = setTimeout(() => {
         console.log("dentro high3");
         sound3.pause();
-    }, 5000);
+    }, 8000);
 } else {
     console.log("dentro low3");
 }
@@ -83,7 +83,7 @@ if (vibration === "high4") {
     soundTimeout4 = setTimeout(() => {
         console.log("dentro high4");
         sound4.pause();
-    }, 5000);
+    }, 8000);
 } else {
     console.log("dentro low4");
 }
@@ -93,7 +93,7 @@ if (vibration === "high4") {
 function changeBackground(time) {
   setInterval(() => {
       //console.log("change");
-      const randomNumber = Math.floor(Math.random() * 10);
+      const randomNumber = Math.floor(Math.random() * 31);
       document.body.style.backgroundImage = `url(assets/img/${randomNumber}.webp)`;
       counter++;
      
