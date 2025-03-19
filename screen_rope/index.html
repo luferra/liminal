@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liminal</title>
+    <script src="assets/arduino/WebSerialAPI_library.js" defer></script>
+    <script src="assets/arduino/WebSerialAPI_ui.js" defer></script>
+    <script src="assets/js/script1.js" defer></script>
+    <link rel="stylesheet" href="assets/arduino/WebSerialAPI_style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <audio id="sound1" style="display: none;" controls>
+        <source src="../music/rope/Rho - Smooth Assassin.mp3" type="video/mp4" />
+    </audio>
+    <audio id="sound2" style="display: none;" controls>
+        <source src="../music/rope/liner-mooring-hawsers-creak-gangplank-groans.wav" type="video/mp4" />
+    </audio>
+    <audio id="sound3" style="display: none;" controls>
+        <source src="../music/rope/ropes_merged.mp3" type="video/mp4" />
+    </audio>
+    <audio id="sound4" style="display: none;" controls>
+        <source src="../music/rope/yachtrigging.wav" type="video/mp4" />
+    </audio>
+    
+    <div id="support_status"></div>
+
+    <div id="serial_control_bar">
+        <button id="button_start_serial">Start Serial Communication</button>
+        <button id="button_stop_serial">Stop Serial Communication</button>
+        <div id="serial_logger_container"></div>
+    </div>
+
+    <div id="menu">&#9881;</div>
+</body>
+</html>
