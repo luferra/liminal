@@ -3,7 +3,7 @@ const sound1 = document.getElementById("sound1");
 const sound2 = document.getElementById("sound2");
 const sound3 = document.getElementById("sound3");
 const sound4 = document.getElementById("sound4");
-let timer =21000;
+let timer = 2000;
 
 
 function updateWebPage(data) {
